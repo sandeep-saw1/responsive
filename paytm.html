@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      .main {
+        height: 100%;
+        width: 100%;
+      }
+      .nav {
+        border: 1px solid #ccc;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3vw;
+      }
+      .nav1 {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+      }
+      .nav h2 {
+        font-size: 2vw;
+        font-weight: 700;
+      }
+      .nav h3 {
+        font-weight: 300;
+      }
+      .nav i {
+        font-size: 2vw;
+        display: none;
+      }
+      .nav button {
+        background-color: #42535d;
+        height: 3vw;
+        font-size: 1px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.56vw;
+      }
+      .content {
+        height: calc(100% - 80px);
+        width: 100%;
+        display: flex;
+        position: relative;
+      }
+      .left {
+        height: 100%;
+        width: 50%;
+        padding: 5vw 3vw;
+        font-size: 2vw;
+      }
+      .right {
+        height: 100%;
+        width: 50%;
+      }
+
+      .left h1 span {
+        color: #ff725e;
+      }
+      .left p {
+        font-size: 1.45vw;
+        font-weight: 300;
+        columns: #ccc;
+        padding: 1vw 0vw;
+      }
+      .left button {
+        border-radius: 1vw;
+        padding: 1vw;
+        font-size: 3vw;
+        color: rgb(255, 255, 255);
+        background-color: #ff725e;
+        border: none;
+      }
+      .left button:hover {
+        background-color: #4c97d0;
+      }
+      .right img {
+        padding: 1vw;
+        height: 100%;
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        .nav {
+          color: rgb(2, 2, 2);
+          padding: 0 5vw;
+          height: 70px;
+        }
+        .nav h2 {
+          font-size: 6vw;
+        }
+        .nav1 h3 {
+          display: none;
+        }
+        .nav1 i {
+          display: block;
+          font-size: 6vw;
+        }
+        .nav button {
+          display: none;
+        }
+        .content {
+          height: calc(100% - 70px);
+          flex-direction: column;
+        }
+        .left {
+          height: 100%;
+          width: 90%;
+          padding-left: 5vw;
+        }
+        .left h1 {
+          font-size: 8vw;
+        }
+        .left p {
+          font-size: 5vw;
+          margin-top: 2vw;
+        }
+        .left button {
+          font: 1vw;
+          margin-top: 3vw;
+          font-size: 4vw;
+          height: 9vw;
+          padding: 2vw;
+        }
+        .right {
+          height: 50%;
+          width: 100%;
+        }
+        .right img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <h2>Logo</h2>
+        <div class="nav1">
+          <h3>About</h3>
+          <h3>contact</h3>
+          <h3>cources</h3>
+          <h3>Padding</h3>
+          <h3>search</h3>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="content">
+        <div class="left">
+          <h1>
+            Learn from <span>GpSawza</span> Platfrom Of <br />
+            India
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            fugiat voluptatum eos deserunt itaque rerum u.
+          </p>
+          <button>Explore Now</button>
+        </div>
+        <div class="right"><img src="img/Hand coding-pana.jpg" alt="" /></div>
+      </div>
+    </div>
+  </body>
+</html>
